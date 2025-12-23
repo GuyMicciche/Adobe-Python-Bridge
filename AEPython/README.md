@@ -1,19 +1,17 @@
 # AE Python
 Python scripting plugin for After Effects
 
-***Read this document in other languages: [Japanese](./README_ja.md)***
-
 ## Features
 * Directly edit data on After Effects with Python scripts
 * Enabled to use classes and functions with the same names as After Effects default scripts (ExtendScript, JavaScript) 
   * Class and function reference: https://ae-scripting.docsforadobe.dev/introduction/overview.html
 * Interoperation between Javascript and Python
-* GUI development by Qt ([PySide2](https://pypi.org/project/PySide2/))
+* GUI development by Qt ([PySide6](https://pypi.org/project/PySide6/))
 
 ## System Requirements
-* Adobe After Effects CS6 / CC~
+* Adobe After Effects
 * Windows 10 / 11
-* [Python 3.10.9](https://www.python.org/downloads/release/python-3109/) (included in the distribution Zip)
+* [Python 3.14.2](https://www.python.org/downloads/release/python-3142/) (included in the distribution Zip)
 
 ## Installation
 Copy each files and folders in the distribution Zip to the following locations.
