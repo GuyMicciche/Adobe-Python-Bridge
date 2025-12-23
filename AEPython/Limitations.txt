@@ -1,0 +1,7 @@
+1. can't do ae.alert() to print out Qt objects/classes. example this will not work
+
+import AEPython as ae
+from PySide6 import QtWidgets, QtCore
+
+loader = QtWidgets.QDialog()
+ae.alert(loader)

@@ -1,0 +1,100 @@
+QMainWindow, QDialog {
+    background-color: #000000;
+}
+
+QLabel {
+    color: #00ff00;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 5px 0px;
+}
+
+QTextEdit, QPlainTextEdit {
+    background-color: #000000;
+    color: #00ff00;
+    border: 1px solid #003300;
+    border-radius: 0px;
+    padding: 8px;
+    font-family: 'Courier New', monospace;
+    font-size: 10pt;
+    selection-background-color: #003300;
+}
+
+QScrollArea {
+    border: 1px solid #003300;
+    border-radius: 4px;
+}
+
+QWidget#rightLabel {
+    background-color: #000000;
+}
+
+QWidget#scriptListContainer {
+    background-color: #000000;
+}
+
+QPushButton {
+    background-color: #003300;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+    border-radius: 0px;
+    padding: 8px 16px;
+    font-size: 11px;
+    font-weight: bold;
+    min-height: 28px;
+}
+
+QPushButton:hover {
+    background-color: #005500;
+}
+
+QPushButton:pressed {
+    background-color: #001100;
+}
+
+QMenuBar {
+    background-color: #000000;
+    color: #00ff00;
+    border-bottom: 1px solid #003300;
+}
+
+QMenuBar::item {
+    background-color: transparent;
+    padding: 4px 12px;
+}
+
+QMenuBar::item:selected {
+    background-color: #003300;
+}
+
+QMenu {
+    background-color: #000000;
+    color: #00ff00;
+    border: 1px solid #003300;
+}
+
+QMenu::item:selected {
+    background-color: #003300;
+}
+
+QTabWidget::pane {
+    border: 1px solid #003300;
+    background-color: #000000;
+}
+
+QTabBar::tab {
+    background-color: #001100;
+    color: #00ff00;
+    border: 1px solid #003300;
+    padding: 8px 16px;
+    margin-right: 2px;
+}
+
+QTabBar::tab:selected {
+    background-color: #003300;
+    color: #00ff00;
+}
+
+QTabBar::tab:hover {
+    background-color: #002200;
+}

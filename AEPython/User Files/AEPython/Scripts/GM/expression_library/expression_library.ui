@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ExpressionLibrary</class>
+ <widget class="QDialog" name="ExpressionLibrary">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>📚 Expression Library Pro</string>
+  </property>
+  <layout class="QHBoxLayout" name="main_layout">
+   <item>
+    <widget class="QWidget" name="left_widget" native="true">
+     <property name="maximumSize">
+      <size>
+       <width>300</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <layout class="QVBoxLayout" name="left_panel">
+      <item>
+       <widget class="QLabel" name="header">
+        <property name="styleSheet">
+         <string notr="true">font-size: 16px; font-weight: bold; padding: 10px;</string>
+        </property>
+        <property name="text">
+         <string>📚 Expression Library Pro</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="search_layout">
+        <item>
+         <widget class="QLineEdit" name="search_input">
+          <property name="placeholderText">
+           <string>🔍 Search expressions...</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="clear_search_btn">
+          <property name="text">
+           <string>✕</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QLabel" name="tree_label">
+        <property name="text">
+         <string>Expressions:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTreeWidget" name="expr_tree">
+        <property name="headerHidden">
+         <bool>true</bool>
+        </property>
+        <column>
+         <property name="text">
+          <string notr="true">1</string>
+         </property>
+        </column>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="button_layout">
+        <item>
+         <widget class="QPushButton" name="add_btn">
+          <property name="text">
+           <string>➕ New</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="edit_btn">
+          <property name="text">
+           <string>✏️ Edit</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="delete_btn">
+          <property name="text">
+           <string>🗑️ Delete</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="io_layout">
+        <item>
+         <widget class="QPushButton" name="import_btn">
+          <property name="text">
+           <string>📥 Import</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="export_btn">
+          <property name="text">
+           <string>📤 Export</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="right_widget" native="true">
+     <layout class="QVBoxLayout" name="right_panel">
+      <item>
+       <widget class="QLabel" name="expr_name_label">
+        <property name="styleSheet">
+         <string notr="true">font-size: 14px; font-weight: bold;</string>
+        </property>
+        <property name="text">
+         <string>Expression Name</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="expr_desc_label">
+        <property name="styleSheet">
+         <string notr="true">color: #888; padding: 5px;</string>
+        </property>
+        <property name="text">
+         <string>Description</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="code_label">
+        <property name="styleSheet">
+         <string notr="true">font-weight: bold; margin-top: 10px;</string>
+        </property>
+        <property name="text">
+         <string>Expression Code:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPlainTextEdit" name="code_display">
+        <property name="styleSheet">
+         <string notr="true">font-family: 'Consolas', 'Courier New', monospace;
+font-size: 10pt;
+background-color: #1e1e1e;
+color: #d4d4d4;
+border: 1px solid #3c3c3c;
+border-radius: 4px;
+padding: 8px;</string>
+        </property>
+        <property name="lineWrapMode">
+         <enum>QPlainTextEdit::NoWrap</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="editor_controls">
+        <item>
+         <widget class="QCheckBox" name="read_only_check">
+          <property name="text">
+           <string>Read-only</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="save_code_btn">
+          <property name="text">
+           <string>💾 Save Changes</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QPushButton" name="apply_btn">
+        <property name="styleSheet">
+         <string notr="true">font-weight: bold; padding: 10px;</string>
+        </property>
+        <property name="text">
+         <string>✨ Apply to Selected Property</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="info_label">
+        <property name="styleSheet">
+         <string notr="true">padding: 10px; background-color: #333; border-radius: 4px; color: #aaa;</string>
+        </property>
+        <property name="text">
+         <string>💡 Select a property in After Effects timeline, then click Apply to add expression.</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,113 @@
+QMainWindow, QDialog {
+    background-color: #f3f3f3;
+}
+
+QLabel {
+    color: #000000;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 5px 0px;
+}
+
+QTextEdit, QPlainTextEdit {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #d1d1d1;
+    border-radius: 6px;
+    padding: 10px;
+    font-family: 'Segoe UI', 'Consolas', monospace;
+    font-size: 10pt;
+    selection-background-color: #0078d4;
+    selection-color: #ffffff;
+}
+
+QScrollArea {
+    border: 1px solid #d1d1d1;
+    border-radius: 4px;
+}
+
+QWidget#rightLabel {
+    background-color: #ffffff;
+}
+
+QWidget#scriptListContainer {
+    background-color: #ffffff;
+}
+
+QPushButton {
+    background-color: #0078d4;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 11px;
+    font-weight: 600;
+    min-height: 32px;
+}
+
+QPushButton:hover {
+    background-color: #106ebe;
+}
+
+QPushButton:pressed {
+    background-color: #005a9e;
+}
+
+QMenuBar {
+    background-color: #f3f3f3;
+    color: #000000;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+QMenuBar::item {
+    background-color: transparent;
+    padding: 6px 14px;
+}
+
+QMenuBar::item:selected {
+    background-color: #e5e5e5;
+    border-radius: 4px;
+}
+
+QMenu {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #d1d1d1;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+QMenu::item {
+    padding: 8px 24px;
+    border-radius: 4px;
+}
+
+QMenu::item:selected {
+    background-color: #f3f3f3;
+}
+
+QTabWidget::pane {
+    border: 1px solid #d1d1d1;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+QTabBar::tab {
+    background-color: #e5e5e5;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 4px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+QTabBar::tab:selected {
+    background-color: #ffffff;
+    color: #0078d4;
+    font-weight: 600;
+}
+
+QTabBar::tab:hover {
+    background-color: #f3f3f3;
+}
