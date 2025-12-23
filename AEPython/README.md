@@ -3,6 +3,7 @@ Python scripting plugin for After Effects
 
 ## AE Python Console
 Window > Python
+
 <img width="725" height="518" alt="image" src="https://github.com/user-attachments/assets/c2435a60-89fa-41da-8cab-4d7e4dc72cc0" />
 
 ## Features
@@ -17,6 +18,7 @@ Window > Python
 
 ## AE Script Library
 Window > Python Script Library
+
 <img width="721" height="514" alt="image" src="https://github.com/user-attachments/assets/398d6d09-a6a7-41f7-8983-8fa1c26d484e" />
 
 ## System Requirements
@@ -36,6 +38,7 @@ Window > Python Script Library
 
 ## Open ScriptUI Panel
 Window > Python Script Library.jsx
+
 <img width="706" height="470" alt="image" src="https://github.com/user-attachments/assets/29d49728-8799-485b-bd14-f61ed1141744" />
 
 ## Scripting Guide
