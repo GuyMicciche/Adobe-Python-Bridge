@@ -401,6 +401,8 @@ FodyWeavers.xsd
 /get-pip.py
 /python-3.10.9-embed-amd64.zip
 
+AEGP/
+
 
 # Ignore all Release-style build folders in AEPython
 Release/

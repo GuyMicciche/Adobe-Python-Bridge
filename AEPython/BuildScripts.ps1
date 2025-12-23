@@ -1,21 +1,21 @@
-﻿$PYTHON_ZIP = Join-Path $PSScriptRoot "python-3.11.7-embed-amd64.zip"
+﻿$PYTHON_ZIP = Join-Path $PSScriptRoot "python-3.1427-embed-amd64.zip"
 $GETPIP_PY  = Join-Path $PSScriptRoot "get-pip.py"
 
 # Target root = folder the script is in (e.g. ...\AEPython\Installer\AEGP)
 $TARGET_ROOT = Join-Path $PSScriptRoot "AEGP"
 
-$PYTHON_ROOT = Join-Path $TARGET_ROOT "AEPython\python-3.11.7-embed-amd64"
+$PYTHON_ROOT = Join-Path $TARGET_ROOT "AEPython\python-3.14.2-embed-amd64"
 $PYTHON_EXE  = Join-Path $PYTHON_ROOT "python.exe"
-$PTH         = Join-Path $PYTHON_ROOT "python311._pth"  # Updated PTH filename
+$PTH         = Join-Path $PYTHON_ROOT "python314._pth"  # Updated PTH filename
 
 # Ensure target root exists
 if (!(Test-Path $TARGET_ROOT)) {
     New-Item -ItemType Directory -Path $TARGET_ROOT | Out-Null
 }
 
-# Download Python 3.13.0 (latest stable with PySide6 6.8+ support)
+# Download Python 3.14.2 (latest stable with PySide6 6.8+ support)
 if (!(Test-Path $PYTHON_ZIP)) {
-    Invoke-WebRequest "https://www.python.org/ftp/python/3.11.7/python-3.11.7-embed-amd64.zip" -OutFile $PYTHON_ZIP
+    Invoke-WebRequest "https://www.python.org/ftp/python/3.14.2/python-3.14.27-embed-amd64.zip" -OutFile $PYTHON_ZIP
 }
 
 if (!(Test-Path $GETPIP_PY)) {
@@ -33,7 +33,7 @@ if (!(Test-Path $PYTHON_ROOT)) {
     # Install pip first
     .\python.exe $GETPIP_PY
     
-    # Install PySide6 + requirements (PySide6 6.8+ supports Python 3.13)
+    # Install PySide6 + requirements (PySide6 6.8+ supports Python 3.14)
     .\python.exe -m pip install -r (Join-Path $PSScriptRoot "requirements.txt") --upgrade
 
     Pop-Location
@@ -51,6 +51,6 @@ Copy-Item -Path (Join-Path $PSScriptRoot "README.md")                -Destinatio
 Remove-Item $PYTHON_ZIP  -ErrorAction SilentlyContinue
 Remove-Item $GETPIP_PY   -ErrorAction SilentlyContinue
 
-Write-Host "✅ Installation complete! Python 3.11.7 + PySide6 6.10.1 ready." -ForegroundColor Green
+Write-Host "✅ Installation complete! Python 3.14.2 + PySide6 6.10.1 ready." -ForegroundColor Green
 Write-Host "📁 Python located at: $PYTHON_ROOT" -ForegroundColor Cyan
 Pause
