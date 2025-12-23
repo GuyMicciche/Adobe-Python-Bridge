@@ -1,25 +1,34 @@
 # AE Python
 Python scripting plugin for After Effects
 
+## AE Python Console
+
+<img width="725" height="518" alt="image" src="https://github.com/user-attachments/assets/c2435a60-89fa-41da-8cab-4d7e4dc72cc0" />
+
 ## Features
-* Directly edit data on After Effects with Python scripts
+* Directly control After Effects with Python scripts
+* Create Qt and Fluent UI elements
+* Python script library and manager.
 * Enabled to use classes and functions with the same names as After Effects default scripts (ExtendScript, JavaScript) 
   * Class and function reference: https://ae-scripting.docsforadobe.dev/introduction/overview.html
 * Interoperation between Javascript and Python
 * GUI development by Qt ([PySide6](https://pypi.org/project/PySide6/))
+* GUI development by ([PyQt Fluent Widgets](https://github.com/zhiyiYo/PyQt-Fluent-Widgets/tree/PySide6))
+
+## AE Script Library
+
+<img width="721" height="514" alt="image" src="https://github.com/user-attachments/assets/398d6d09-a6a7-41f7-8983-8fa1c26d484e" />
 
 ## System Requirements
-* Adobe After Effects
+* Adobe After Effects 2025
 * Windows 10 / 11
 * [Python 3.14.2](https://www.python.org/downloads/release/python-3142/) (included in the distribution Zip)
 
 ## Installation
 Copy each files and folders in the distribution Zip to the following locations.
-* AEPython folder -> C:\Program Files\Adobe\Adobe After Effects {version}\Support Files\Plug-ins\AEPython
-* AEPython.jsx -> C:\Program Files\Adobe\Adobe After Effects {version}\Support Files\Scripts\Startup\AEPython.jsx
-
-## License
-MIT License (see [LICENSE](./LICENSE).)
+* AEPython > AE > Plug-ins > AEPython -> C:\Program Files\Adobe\Adobe After Effects {version}\Support Files\Plug-ins\AEPython
+* AEPython > AE > Scripts -> C:\Program Files\Adobe\Adobe After Effects {version}\Support Files\Scripts
+* AEPython > User Documents > AEPython -> %USERPROFILE%\Documents\AEPython
 
 ## Scripting Guide
 
@@ -39,7 +48,7 @@ text_prop.setValue(text_document)
 ```
 
 ### Run .py files from the Python Window
-Select .py file from File -> "Execute Python File" in the AEPython window.
+Select .py file from File -> "Execute Python File" in the AE Python Console window.
 
 [sample.py]
 ```Python
@@ -59,7 +68,7 @@ Python.execFile("D:/sample.py");
 
 ### GUI by Qt
 ```Python 
-from PySide2 import QtWidgets
+from PySide6 import QtWidgets
 
 import AEPython as ae
 import qtae
