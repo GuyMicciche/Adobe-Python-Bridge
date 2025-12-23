@@ -2,7 +2,7 @@
 Python scripting plugin for After Effects
 
 ## AE Python Console
-
+Window > Python
 <img width="725" height="518" alt="image" src="https://github.com/user-attachments/assets/c2435a60-89fa-41da-8cab-4d7e4dc72cc0" />
 
 ## Features
@@ -16,7 +16,7 @@ Python scripting plugin for After Effects
 * GUI development by ([PyQt Fluent Widgets](https://github.com/zhiyiYo/PyQt-Fluent-Widgets/tree/PySide6))
 
 ## AE Script Library
-
+Window > Python Script Library
 <img width="721" height="514" alt="image" src="https://github.com/user-attachments/assets/398d6d09-a6a7-41f7-8983-8fa1c26d484e" />
 
 ## System Requirements
@@ -29,6 +29,14 @@ Copy each files and folders in the distribution Zip to the following locations.
 * AEPython > AE > Plug-ins > AEPython -> C:\Program Files\Adobe\Adobe After Effects {version}\Support Files\Plug-ins\AEPython
 * AEPython > AE > Scripts -> C:\Program Files\Adobe\Adobe After Effects {version}\Support Files\Scripts
 * AEPython > User Documents > AEPython -> %USERPROFILE%\Documents\AEPython
+
+## Open Plug-in Window
+Window > Python
+Window > Python Script Library
+
+## Open ScriptUI Panel
+Window > Python Script Library.jsx
+<img width="706" height="470" alt="image" src="https://github.com/user-attachments/assets/29d49728-8799-485b-bd14-f61ed1141744" />
 
 ## Scripting Guide
 
